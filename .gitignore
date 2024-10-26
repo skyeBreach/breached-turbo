@@ -1,4 +1,14 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+###------------------------------------------------------------------------------------------------------------------###
+### Breached-Turbo Specific .gitignore
+
+## Development Specific Files
+/Development Docs/
+
+## Package Manager Files
+*-lock.yaml
+
+###------------------------------------------------------------------------------------------------------------------###
+### Standard Turborepo .gitignore template
 
 # Dependencies
 node_modules
@@ -35,3 +45,5 @@ yarn-error.log*
 # Misc
 .DS_Store
 *.pem
+
+###------------------------------------------------------------------------------------------------------------------###
