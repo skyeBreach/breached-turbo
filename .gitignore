@@ -7,6 +7,9 @@
 ## Package Manager Files
 *-lock.yaml
 
+## Build Files
+ **/*.tsbuildinfo
+
 ###------------------------------------------------------------------------------------------------------------------###
 ### Standard Turborepo .gitignore template
 
