@@ -1,0 +1,4 @@
+{
+    "extends": ["@breached-turbo/config-typescript/base.json"]
+}
+  

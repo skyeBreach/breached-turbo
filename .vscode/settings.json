@@ -126,7 +126,9 @@
     "tailwindcss",
     "tiktok",
     "Tiktok",
-    "Turborepo"
+    "tsbuildinfo",
+    "Turborepo",
+    "typecheck"
 ],
 
   /** Markdown Preview Enhanced Editor. */

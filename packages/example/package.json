@@ -1,0 +1,25 @@
+{
+    "name": "@breached-turbo/example",
+    "version": "0.1.0",
+    "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
+    "license": "MIT",
+    "private": true,
+    "description": "An example package primarily used to test this repositories tooling.",
+    "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    },
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "dev": "tsc -w -p tsconfig.build.json",
+        "lint": "eslint .  --max-warnings 0",
+        "type-check": "tsc"
+    },
+    "devDependencies": {
+        "@repo/eslint-config": "workspace:*",
+        "@breached-turbo/config-typescript": "workspace:*"
+    }
+}
