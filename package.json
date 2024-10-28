@@ -1,0 +1,23 @@
+{
+    "name": "breached-turbo",
+    "version": "0.1.0",
+    "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+        "build": "turbo build",
+        "dev": "turbo dev",
+        "lint": "turbo lint",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    },
+    "devDependencies": {
+        "prettier": "^3.2.5",
+        "turbo": "^2.2.3",
+        "typescript": "5.5.4"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "packageManager": "pnpm@8.15.6"
+}
+

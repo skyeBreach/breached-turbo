@@ -1,0 +1,42 @@
+{
+  "recommendations": [
+    /** Prettier integration with vscode */
+    "esbenp.prettier-vscode",
+
+    /** Adds in the British language, this locale is set to the default. */
+    "streetsidesoftware.code-spell-checker-british-english",
+
+    /** Changes the colour of comments to match the comments annotation. */
+    "aaron-bond.better-comments",
+
+    /** i18n Localisation Helper. */
+    "lokalise.i18n-ally",
+
+    /** Markdown Preview enhancer that adds alot of extra functionality. */
+    "shd101wyy.markdown-preview-enhanced",
+
+    /** ESLint Integration. */
+    "dbaeumer.vscode-eslint",
+
+    /** Syntax Highlighting Support for Environment (.env) Files. */
+    "mikestead.dotenv",
+
+    /** PostCSS Language Support. */
+    "csstools.postcss",
+
+    /** Tailwind CSS IntelliSense.  */
+    "bradlc.vscode-tailwindcss",
+
+    /** Vitest Integration Extension. */
+    "vitest.explorer",
+
+    /** TypeScript Error Formatter. */
+    "yoavbls.pretty-ts-errors",
+
+    /** Playwright Integration Extension. */
+    "ms-playwright.playwright",
+
+    /** Auto JSDoc comment generator. */
+    "oouo-diogo-perdigao.docthis"
+  ]
+}
