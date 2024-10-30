@@ -2,7 +2,8 @@
 ### Breached-Turbo Specific .gitignore
 
 ## Development Specific Files
-/Dev/
+/dev/
+**/todo.*
 
 ## Package Manager Files
 *-lock.yaml
@@ -12,6 +13,7 @@
 
 ###------------------------------------------------------------------------------------------------------------------###
 ### Standard Turborepo .gitignore template
+git commit -m "chore: add all TODO folders to the .gitignore file"
 
 # Dependencies
 node_modules
