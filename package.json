@@ -8,11 +8,14 @@
         "build": "turbo build",
         "dev": "turbo dev",
         "lint": "turbo lint",
+        "lint:fix": "turbo lint --continue -- --fix",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
         "type-check": "turbo type-check"
     },
     "devDependencies": {
-        "@breached-turbo/config-typescript": "workspace:*",
+        "@breached-turbo/config-eslint": "workspace:^",
+        "@breached-turbo/config-typescript": "workspace:^",
+        "eslint": "^9.13.0",
         "prettier": "^3.2.5",
         "turbo": "^2.2.3",
         "typescript": "5.5.4"
@@ -22,4 +25,3 @@
     },
     "packageManager": "pnpm@8.15.6"
 }
-
