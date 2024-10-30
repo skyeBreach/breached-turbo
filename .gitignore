@@ -2,7 +2,7 @@
 ### Breached-Turbo Specific .gitignore
 
 ## Development Specific Files
-/Development Docs/
+/Dev/
 
 ## Package Manager Files
 *-lock.yaml
