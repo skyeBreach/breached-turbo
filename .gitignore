@@ -3,13 +3,13 @@
 
 ## Development Specific Files
 /dev/
-**/todo.*
+todo.*
 
 ## Package Manager Files
 *-lock.yaml
 
 ## Build Files
- **/*.tsbuildinfo
+*.tsbuildinfo
 
 ###------------------------------------------------------------------------------------------------------------------###
 ### Standard Turborepo .gitignore template
