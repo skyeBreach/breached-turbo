@@ -11,8 +11,11 @@
             "cache": false,
             "persistent": true
         },
+        "lint:pre": {
+            "dependsOn": []
+        },
         "lint": {
-            "dependsOn": ["^lint"]
+            "dependsOn": ["^lint:pre", "^lint"]
         },
         "type-check": {
             "dependsOn": ["^build"],

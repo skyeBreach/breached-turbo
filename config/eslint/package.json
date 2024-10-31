@@ -18,7 +18,8 @@
     "scripts": {
         "build": "tsc -p tsconfig.build.json",
         "dev": "tsc -w -p tsconfig.build.json",
-        "lint": "pnpm build && eslint .  --max-warnings 0",
+        "lint:pre": "pnpm build",
+        "lint": "eslint . --max-warnings 0",
         "type-check": "tsc"
     },
     "dependencies": {
