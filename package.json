@@ -15,6 +15,7 @@
     "devDependencies": {
         "@breached-turbo/config-eslint": "workspace:^",
         "@breached-turbo/config-typescript": "workspace:^",
+        "@commitlint/cli": "^19.5.0",
         "eslint": "^9.13.0",
         "prettier": "^3.2.5",
         "turbo": "^2.2.3",
