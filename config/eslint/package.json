@@ -9,7 +9,7 @@
     "exports": {
         ".": {
             "import": "./build/dist/index.js",
-            "types": "./build/dist/types/index.d.ts"
+            "types": "./build/dist/index.d.ts"
         }
     },
     "files": [

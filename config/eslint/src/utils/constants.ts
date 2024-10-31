@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------------------------------------------------------------*/
+// File and Directory Constants
+
 /** Common glob patterns that are being reused */
 export const commonPatterns = {
     allDirectories: '**/*',
@@ -7,3 +10,5 @@ export const commonPatterns = {
         typescript: '.{ts,tsx,mts}',
     },
 };
+
+/*--------------------------------------------------------------------------------------------------------------------*/

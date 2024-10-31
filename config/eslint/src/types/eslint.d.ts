@@ -2,7 +2,7 @@
  * Types used for eslint/eslint plugins when they do not provide their own
  */
 
-/** Defines the types imported from @eslint/js, as it doesn't export any */
+/** Defines the types imported from the @eslint/js module */
 declare module '@eslint/js' {
     import type { Linter } from 'eslint';
 
@@ -12,38 +12,7 @@ declare module '@eslint/js' {
     };
 }
 
-/** Defines the types imported from @eslint/eslintrc, as it doesn't export any */
-declare module '@eslint/eslintrc' {
-    import type { Linter } from 'eslint';
-
-    export class FlatCompat {
-        constructor({
-            baseDirectory,
-            resolvePluginsRelativeTo,
-        }: {
-            baseDirectory: string;
-            resolvePluginsRelativeTo: string;
-        });
-
-        extends(extendsValue: string): Linter.Config & {
-            [Symbol.iterator]: () => IterableIterator<Linter.Config>;
-        };
-
-        config(config: Linter.Config): Linter.Config & {
-            [Symbol.iterator]: () => IterableIterator<Linter.Config>;
-        };
-    }
-}
-
-/** Defines the types imported from @eslint/compat, as it doesn't export any */
-declare module '@eslint/compat' {
-    import type { Linter } from 'eslint';
-    import type { ConfigWithExtends } from 'typescript-eslint';
-
-    export const fixupConfigRules: (config: string | Linter.Config) => ConfigWithExtends[];
-}
-
-/** Defines the types imported from eslint-plugin-turbo, as it doesn't export any */
+/** Defines the types imported from the eslint-plugin-turbo module */
 declare module 'eslint-plugin-turbo' {
     import type { Linter, Rule } from 'eslint';
 
@@ -56,7 +25,7 @@ declare module 'eslint-plugin-turbo' {
     export const rules: Record<string, Rule.RuleModule>;
 }
 
-/** Defines the types imported from @eslint-community/eslint-plugin-eslint-comments, as it doesn't export any */
+/** Defines the types imported from the @eslint-community/eslint-plugin-eslint-comments module */
 declare module '@eslint-community/eslint-plugin-eslint-comments/configs' {
     import type { Linter, ESLint } from 'eslint';
 
@@ -68,7 +37,7 @@ declare module '@eslint-community/eslint-plugin-eslint-comments/configs' {
     };
 }
 
-/** Defines the types imported from eslint-plugin-security, as it doesn't export any */
+/** Defines the types imported from the eslint-plugin-security module */
 declare module 'eslint-plugin-security' {
     import type { Linter } from 'eslint';
     import type { ConfigWithExtends } from 'typescript-eslint';
