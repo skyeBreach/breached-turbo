@@ -1,3 +1,3 @@
-import { config } from '@breached-turbo/config-eslint';
+import { configs, DefineConfig } from '@breached-turbo/config-eslint';
 
-export default config.base;
+export default DefineConfig([...configs.base]);
