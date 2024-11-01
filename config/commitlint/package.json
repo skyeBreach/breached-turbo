@@ -1,0 +1,42 @@
+{
+    "name": "@breached-turbo/config-commitlint",
+    "version": "0.1.0",
+    "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
+    "license": "MIT",
+    "private": true,
+    "description": "",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./build/dist/index.js",
+            "types": "./build/dist/index.d.ts"
+        }
+    },
+    "files": [
+        "build/dist"
+    ],
+    "scripts": {
+        "build": "tsc -p tsconfig.build.json",
+        "dev": "tsc -w -p tsconfig.build.json",
+        "lint": "eslint .  --max-warnings 0",
+        "type-check": "tsc"
+    },
+    "dependencies": {
+        "@commitlint/config-conventional": "^19.5.0",
+        "@commitlint/config-pnpm-scopes": "^19.5.0",
+        "@commitlint/config-validator": "^19.5.0",
+        "@commitlint/format": "^19.5.0",
+        "@commitlint/lint": "^19.5.0",
+        "@commitlint/load": "^19.5.0",
+        "@commitlint/read": "^19.5.0",
+        "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+        "@breached-turbo/config-eslint": "workspace:^",
+        "@breached-turbo/config-typescript": "workspace:^",
+        "@commitlint/cli": "^19.5.0",
+        "@commitlint/types": "^19.5.0",
+        "@commitlint/utils": "^8.3.6",
+        "@types/lodash": "^4.17.13"
+    }
+}

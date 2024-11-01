@@ -1,0 +1,6 @@
+{
+    "extends": [
+        "./tsconfig.json",
+        "@breached-turbo/config-typescript/build.json"
+    ]
+}
