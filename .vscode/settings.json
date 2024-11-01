@@ -41,23 +41,6 @@
      */
     "markdown-preview-enhanced.previewMode": "Multiple Previews",
 
-    // !ConfigFixMe: If you dont wish to include the author in the JSDoc comments then set the below to false.
-    /** DocumentThis author settings. */
-    "docthis.includeAuthorTag": true,
-    "docthis.authorName": "skyeBreach",
-
-    // !ConfigFixMe: Set this to false if you dont want the @date to be shown in JSDoc comments.
-    /** Adds the @date tag, in dd-mm-yy, to the generated JSDoc comments. */
-    "docthis.includeDateTag": true,
-
-    // !ConfigFixMe: Set this to false if you dont want the @return value, if one exists, to be shown in JSDoc comments.
-    /** Adds the @return tag, for objects with a return type, to the generated JSDoc comments. */
-    "docthis.returnsTag": true,
-
-    // !ConfigFixMe:  Set this to false if you dont want the types of the @params and @return value to be shown in JSDoc comments.
-    /** Include the types in the JSDoc for the @params and @return. */
-    "docthis.includeTypes": true,
-
     // !ConfigFixMe: If you are using a package manager other than "PnPm" this will need setting to your package managers lock file.
     /** Removes the package manager's lock file from the search tab. */
     "search.exclude": {
