@@ -1,7 +1,7 @@
 import type { ParserPreset, UserConfig } from '@commitlint/types';
 
-/*--------------------------------------------------------------------------------------------------------------------*/
-// Config Definition Type Defs
+//~ ---------------------------------------------------------------------------------------------------------------- ~//
+//~ Config Definition Type Defs
 
 /** Type definition for an extended version of the {@link UserConfig} that includes the util functions */
 export interface IExtendedUserConfig extends UserConfig {
@@ -17,12 +17,12 @@ export interface IConfigOptions {
     defaultIgnores?: boolean;
 }
 
-/*--------------------------------------------------------------------------------------------------------------------*/
-// Config Object Type Defs
+//~ ---------------------------------------------------------------------------------------------------------------- ~//
+//~ Config Object Type Defs
 
 /** Type definition for the exported config objects */
 export interface IConfigs {
     base: IExtendedUserConfig;
 }
 
-/*--------------------------------------------------------------------------------------------------------------------*/
+//~ ---------------------------------------------------------------------------------------------------------------- ~//
