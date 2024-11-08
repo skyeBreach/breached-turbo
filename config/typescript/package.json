@@ -4,9 +4,8 @@
     "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
     "license": "MIT",
     "private": true,
-    
     "files": [
-        "base.json"
+        "base.json",
+        "build.json"
     ]
 }
-  
