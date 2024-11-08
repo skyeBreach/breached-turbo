@@ -25,14 +25,6 @@
             "path": "../packages/example",
         },
         {
-            "name": "📦 Package/logger",
-            "path": "../packages/logger",
-        },
-        {
-            "name": "⚙️ Tooling/breached-blueprint",
-            "path": "../tooling/breached-blueprint",
-        },
-        {
             "name": "Scripts",
             "path": "../scripts",
         },
