@@ -1,0 +1,429 @@
+{
+    "folders": [
+        {
+            "name": "✨ breached-turbo",
+            "path": "../",
+        },
+        {
+            "name": "⚙️ Config/commitlint",
+            "path": "../config/commitlint",
+        },
+        {
+            "name": "⚙️ Config/eslint",
+            "path": "../config/eslint",
+        },
+        {
+            "name": "⚙️ Config/typedoc",
+            "path": "../config/typedoc",
+        },
+        {
+            "name": "⚙️ Config/typescript",
+            "path": "../config/typescript",
+        },
+        {
+            "name": "📦 Package/example",
+            "path": "../packages/example",
+        },
+        {
+            "name": "📦 Package/logger",
+            "path": "../packages/logger",
+        },
+        {
+            "name": "⚙️ Tooling/breached-blueprint",
+            "path": "../tooling/breached-blueprint",
+        },
+        {
+            "name": "Scripts",
+            "path": "../scripts",
+        },
+    ],
+
+    "settings": {
+        // ConfigureMe: Set the tabsize to the indentation you want, i.e 2 or 4
+        // ConfigureMe: Set detectIndentation to true if you want to use the auto tabsize for that file (detected)
+        // VSCode editor indentation settings
+        "editor.tabSize": 4,
+        "editor.detectIndentation": false,
+
+        // ConfigureMe: Set to false if you want to turn zooming off
+        // Enables zooming when using the scroll wheel
+        "editor.mouseWheelZoom": true,
+
+        // ConfigureMe: Change this number to the max line length you are using
+        // Adds a ruler at the max line length we want
+        "editor.rulers": [120],
+
+        // Enables bracket pair guides only for the active bracket pair
+        "editor.guides.bracketPairs": "active",
+
+        // Configuration to set which files and folders should be excluded from the "explorer"
+        "files.exclude": {
+            // ConfigureMe: If you do not want to see any 'node_modules' folder then set to true
+            // Include the node modules, as they are useful when searching through source code
+            "**/node_modules/": false,
+
+            // Exclude any turbo generated folder from the file explorer
+            "**/.turbo/": true,
+
+            // Lock files are excluded as they are generated so dont need to be edited
+            "pnpm-lock.yaml": true,
+            "node-lock.json": true,
+        },
+
+        // Confiuguration to set which files and folders are indexed for searching
+        "search.exclude": {
+            // Do not index the node modules for any package as they clog up the search
+            "**/node_modules/": true,
+
+            // Exclude any turbo generated folder from the search
+            "**/.turbo/": true,
+
+            // Lock files should not be searchable as they are generated
+            "pnpm-lock.yaml": true,
+            "node-lock.json": true,
+
+            // Ignore the gitkeeps as they will only contain comments at the most
+            "**/.gitkeep": true,
+        },
+
+        // Enables comment formatting for multiline/block comments
+        "better-comments.multilineComments": true,
+
+        // Enable/disable hightlight plain text.
+        "better-comments.highlightPlainText": false,
+
+        // ConfigureMe: If you do not need any of these tags remove them, or change their formatting
+        // Used to define any custom comment formatting tags, and overwrite the defaults
+        "better-comments.tags": [
+            /**
+             * # Title Comment
+             * Used to indicate the title of a group of comments, or a block comment
+             *
+             * Examples:
+             * # This is an example title
+             * # Extended User Config
+             */
+            {
+                "tag": "#",
+                "color": "#c3f4fb",
+                "strikethrough": false,
+                "underline": true,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+            /**
+             * # Heading Comment
+             * Used to indicate a section heading in a group of comments, or a block comment
+             *
+             * Examples:
+             * ~# This is an example heading
+             * ~# Description
+             */
+            {
+                "tag": "~#",
+                "color": "#a6cfd5",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+            /**
+             * # Seperator Comment
+             * Used to format both the function and code seperators title and the seperator its self
+             *
+             * Examples:
+             * ~ This is an Section Title
+             * ~ Config Definition Utilities
+             */
+            {
+                "tag": "~",
+                "color": "#b11aff",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+            /**
+             * # Alerts comment
+             * Used to alert the developer to an issue or important comment
+             *
+             * Examples:
+             * ! Example alert comment
+             * ! Depreciated method, do not use
+             * ! This is an alert
+             */
+            {
+                "tag": "!",
+                "color": "#FF2D00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+            /**
+             * # Query comment
+             * Used to indicate a query or question about the code
+             *
+             * Examples:
+             * ? Example query comment
+             * ? Should this be moved to the types folder
+             * ? Can we use an external API to achieve this, in a better way
+             */
+            {
+                "tag": "?",
+                "color": "#3498DB",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false,
+            },
+            /**
+             * # Commented out code
+             * Used when code is being commented out, to show it should'nt be there
+             *
+             * Examples:
+             * // this.lineOfCode() = commentedOut
+             */
+            {
+                "tag": "//",
+                "color": "#474747",
+                "strikethrough": true,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false,
+            },
+            /**
+             * # Highlighted comment
+             * Used when you need a comment to be highlighted against the other comments
+             *
+             * Examples:
+             * * This comment is required, if removed the code will break (No we don't know why, so don't ask)!
+             */
+            {
+                "tag": "*",
+                "color": "#98C379",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+            /**
+             * # Completed checkbox components
+             * These are used to change the formatting of a TODO or BUG/FIX item to greyed out when completed
+             *
+             * Examples:
+             * [x] TODO: End the world
+             * - [x] TODO: Find the answer to the Ultimate Question of Life, the Universe, and Everything
+             */
+            {
+                "tag": ["[x]", "- [x]"],
+                "color": "#6a6758",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false,
+            },
+            /**
+             * # TODO task/item comment
+             * Used to indicate that there is a todo task/item here
+             *
+             * Examples:
+             * TODO: Rewrite this object to be simpler to use
+             * [ ] CHORE: Refactor this method to work with the new flat config approach
+             * - [ ] TODO: Rewrite this function comment to be TSDoc compliant
+             */
+            {
+                "tag": [
+                    "todo:",
+                    "[ ] todo:",
+                    "- [ ] todo:",
+                    "chore:",
+                    "[ ] chore:",
+                    "- [ ] chore:",
+                ],
+                "color": "#FF8C00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false,
+            },
+            /**
+             * # Bug/Fix item comment
+             * Used to define/note a bug that is present in the code or a fix that is needed
+             *
+             * Examples:
+             * BUG: Button click downloads the internet, instead of a file
+             * [ ] FIX: API call gives the persons age instead of their address
+             * - [ ] BUG: This function stopped working after v1.5
+             */
+            {
+                "tag": [
+                    "bug:",
+                    "[ ] bug:",
+                    "- [ ] bug:",
+                    "fix:",
+                    "[ ] fix:",
+                    "- [ ] fix:",
+                ],
+                "color": "#FF2D00",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+            /**
+             * # Bookmark comment
+             * Used to note a place worth coming back to (ie acts as a bookmark but its a comment)
+             *
+             * Examples:
+             * MARK: Come back later to implement this
+             */
+            {
+                "tag": "mark:",
+                "color": "#f828ed",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": false,
+                "italic": false,
+            },
+            /**
+             * # ConfigureMe Comment
+             * Used to mark default values that should be configured by the developer
+             *
+             * Examples:
+             * ConfigureMe: Add your API key here
+             * ConfigureMe: Disable once you have have fully set this package up
+             */
+            {
+                "tag": "ConfigureMe:",
+                "color": "#BEA9DF",
+                "strikethrough": false,
+                "underline": false,
+                "backgroundColor": "transparent",
+                "bold": true,
+                "italic": false,
+            },
+        ],
+
+        // ConfigureMe: if you want the markdown checkboxes to have a highlighted white backround then set to true
+        // Disabled to stop it from breaking Better-Comments
+        "todo-tree.highlights.enabled": false,
+
+        // Tags for todo-tree to look out for
+        "todo-tree.general.tags": [
+            "TODO",
+            "todo",
+            "CHORE",
+            "chore",
+            "BUG",
+            "FIX",
+            "fix",
+            "MARK",
+            "mark",
+        ],
+
+        // Groups the above tags under groups to make this easier to use
+        "todo-tree.general.tagGroups": {
+            "CHORE": ["CHORE", "chore"],
+            "TODO": ["TODO", "todo"],
+            "BUG": ["BUG", "FIX", "FIXME", "fix", "fixme"],
+            "MARK": ["MARK", "mark"],
+        },
+
+        // Regex used to find the above tag set within the comments
+        "todo-tree.regex.regex": "((//|#|<!--|;|/\\*|^)((\\s+(!|\\?|\\*|\\-))?(\\s+\\[ \\])?|(\\s+(!|\\?|\\*)\\s+\\[.\\])?)\\s*($TAGS)\\s*:)",
+
+        // Custom item formatting, this allows us to set the icons in the 'TODO's' viewer
+        "todo-tree.highlights.customHighlight": {
+            "CHORE": {
+                "icon": "pencil",
+            },
+            "TODO": {
+                "icon": "checklist",
+            },
+            "BUG": {
+                "icon": "bug",
+            },
+            "MARK": {
+                "icon": "bookmark",
+            },
+        },
+
+        // Set custom text formatting for the item labels in the 'TODO's' viewer
+        "todo-tree.tree.labelFormat": "${tag:uppercase} ${after} [${filename}]",
+
+        // Set custom text formatting for the item tooltips (hover) in the 'TODO's' viewer
+        "todo-tree.tree.tooltipFormat": "${filename}:[${line}] in ${filepath}",
+
+        // Globs excluded from 'todo-tree', mainly used here to exclude '.vscode' and 'node_modules'
+        "todo-tree.filtering.excludeGlobs": [
+            "**/node_modules/*/**",
+            "**/.vscode/**",
+        ],
+
+        // Typescript Settings
+        "typescript.tsdk": "node_modules/typescript/lib",
+        "typescript.enablePromptUseWorkspaceTsdk": true,
+        "typescript.preferences.autoImportFileExcludePatterns": [
+            "next/router.d.ts",
+            "next/dist/client/router.d.ts",
+            "lucide-react",
+        ],
+        "typescript.preferences.preferTypeOnlyAutoImports": true,
+
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.formatOnSave": false,
+        "editor.codeActionsOnSave": [
+            "source.addMissingImports",
+            "source.fixAll.eslint",
+        ],
+
+        "[json][jsonc][yaml]": {
+            "editor.formatOnSave": true,
+            "editor.defaultFormatter": "esbenp.prettier-vscode",
+        },
+
+        "cSpell.language": "en,en-GB",
+        "cSpell.words": [
+            "Allowfunctional",
+            "callsign",
+            "cjsx",
+            "commitlint",
+            "ctsx",
+            "decap",
+            "Decap",
+            "encorporating",
+            "formik",
+            "gitea",
+            "IJWT",
+            "JNCO",
+            "mjsx",
+            "mtsx",
+            "nextjs",
+            "pkce",
+            "SNCO",
+            "tailwindcss",
+            "tiktok",
+            "Tiktok",
+            "tsbuildinfo",
+            "TSES",
+            "Turborepo",
+            "typecheck",
+        ],
+
+        "tailwindCSS.experimental.classRegex": [
+            ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"],
+        ],
+    },
+}
