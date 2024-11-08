@@ -130,13 +130,13 @@ These objects are all marked by a comment that are coloured in red and follow th
 For `'JavaScript'` and `'TypeScript'` style comments,
 
 ```
-    // !ConfigFixMe: <Information About the Configuration Option>
+    // ConfigureMe: <Information About the Configuration Option>
 ```
 
 or for `'.env'` style comments
 
 ```
-    # !ConfigFixMe: <Information About the Configuration Option>
+    # ConfigureMe: <Information About the Configuration Option>
 ```
 
 Once these options have been configured, the marker comments may be removed as they will no longer serve a purpose.
