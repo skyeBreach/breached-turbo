@@ -70,9 +70,9 @@ export const base = DefineConfig([
             // Specify that we are using the 'typescript-eslint' parser
             parser: tslint.parser,
 
-            // TODO: Comment
-            //
+            // Additional options that are passed directly to the 'typescript-eslint' parser
             parserOptions: {
+                // Specifies using TypeScript APIs to generate type information for rules
                 projectService: true,
             },
 
