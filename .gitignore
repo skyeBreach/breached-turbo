@@ -4,6 +4,7 @@
 ## Development Specific Files
 /dev/
 todo.*
+**/*.dev
 
 ## Package Manager Files
 *-lock.yaml
