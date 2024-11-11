@@ -8,8 +8,8 @@
     "type": "module",
     "exports": {
         ".": {
-            "default": "./build/dist/index.js",
-            "types": "./build/dist/index.d.ts"
+            "default": "./.build/dist/index.js",
+            "types": "./.build/dist/index.d.ts"
         }
     },
     "scripts": {

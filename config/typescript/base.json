@@ -42,7 +42,7 @@
         "preserveWatchOutput": true,
 
         "baseUrl": "${configDir}",
-        "tsBuildInfoFile": "${configDir}/build/tsconfig.tsbuildinfo",
+        "tsBuildInfoFile": "${configDir}/.build/tsconfig.tsbuildinfo",
         "paths": {
             "@/*": ["${configDir}/src/*"]
         }

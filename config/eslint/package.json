@@ -8,12 +8,12 @@
     "type": "module",
     "exports": {
         ".": {
-            "import": "./build/dist/index.js",
-            "types": "./build/dist/index.d.ts"
+            "import": "./.build/dist/index.js",
+            "types": "./.build/dist/index.d.ts"
         }
     },
     "files": [
-        "build/dist"
+        ".build/dist"
     ],
     "scripts": {
         "build": "tsc -p tsconfig.build.json",
