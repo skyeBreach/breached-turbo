@@ -1,0 +1,2 @@
+# Run the lint scripts on the staged files via lint-staged
+pnpm lint-staged
