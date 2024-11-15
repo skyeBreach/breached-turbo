@@ -1,0 +1,47 @@
+{
+    "version": "0.2",
+    "language": "en-GB",
+    "dictionaries": [
+        "node",
+        "typescript",
+        "companies",
+        "softwareTerms",
+        "misc",
+        "npm"
+    ],
+    "ignorePaths": [
+        "cspell.json",
+        ".git",
+        "node_modules",
+        "**/*.svg",
+        ".build",
+        "dist",
+        "tsconfig.tsbuildinfo",
+        "**-lock.yaml"
+    ],
+    "words": [
+        "Allowfunctional",
+        "callsign",
+        "cjsx",
+        "commitlint",
+        "ctsx",
+        "decap",
+        "Decap",
+        "encorporating",
+        "formik",
+        "gitea",
+        "IJWT",
+        "mjsx",
+        "mtsx",
+        "nextjs",
+        "pkce",
+        "tailwindcss",
+        "tiktok",
+        "Tiktok",
+        "tsbuildinfo",
+        "TSES",
+        "Turborepo",
+        "typecheck"
+    ],
+    "flagWords": ["hte"]
+}
