@@ -12,7 +12,7 @@ import globals from 'globals';
 export const base = DefineConfig([
     // Glob patterns that this config will ignore
     {
-        ignores: ['.next', 'build', 'storybook-static'],
+        ignores: ['.next', '.build', 'storybook-static', 'node_modules'],
     },
 
     // Base configuration for javascript and typescript
