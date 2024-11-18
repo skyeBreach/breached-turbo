@@ -13,10 +13,6 @@
             "path": "../config/eslint",
         },
         {
-            "name": "⚙️ Config/typedoc",
-            "path": "../config/typedoc",
-        },
-        {
             "name": "⚙️ Config/typescript",
             "path": "../config/typescript",
         },

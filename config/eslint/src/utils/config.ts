@@ -3,7 +3,6 @@ import type { ConfigWithExtends } from 'typescript-eslint';
 import type { FlatConfig } from '@typescript-eslint/utils/ts-eslint';
 
 //~ ---------------------------------------------------------------------------------------------------------------- ~//
-
 // Config Definition Utils
 
 /**
