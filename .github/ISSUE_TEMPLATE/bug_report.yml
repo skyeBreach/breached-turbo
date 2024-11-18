@@ -3,8 +3,6 @@ description: Create a bug report, so we can improve this repository
 title: "bug: "
 labels:
   - bug
-assignees:
-    - skyeBreach
 body:
 	- type: markdown
 	  	attributes:
