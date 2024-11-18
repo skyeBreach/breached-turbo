@@ -13,8 +13,7 @@
         "lint": "turbo lint",
         "lint:fix": "turbo lint --continue -- --fix",
         "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-        "type-check": "turbo type-check",
-        "prepare": "husky"
+        "type-check": "turbo type-check"
     },
     "config": {
         "commitizen": {
@@ -30,9 +29,7 @@
         "commitizen": "^4.3.1",
         "cspell": "^8.16.0",
         "eslint": "^9.13.0",
-        "husky": "^9.1.6",
         "inquirer": "9",
-        "lint-staged": "^15.2.10",
         "prettier": "^3.2.5",
         "turbo": "^2.2.3",
         "typescript": "5.5.4"

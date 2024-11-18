@@ -1,2 +1,0 @@
-# Run the lint scripts on the staged files via lint-staged # lint-staged
-pnpm echo 'test' 
