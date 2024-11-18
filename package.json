@@ -1,44 +1,44 @@
 {
-  "name": "breached-turbo",
-  "version": "0.1.0",
-  "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
-  "license": "MIT",
-  "private": true,
-  "description": "",
-  "type": "module",
-  "scripts": {
-    "commit": "git-cz",
-    "build": "turbo build",
-    "dev": "turbo dev",
-    "lint": "turbo lint",
-    "lint:fix": "turbo lint --continue -- --fix",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "type-check": "turbo type-check",
-    "prepare": "husky"
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
-  },
-  "devDependencies": {
-    "@breached-turbo/config-commitlint": "workspace:^",
-    "@breached-turbo/config-eslint": "workspace:^",
-    "@breached-turbo/config-typescript": "workspace:^",
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/cz-commitlint": "^19.5.0",
-    "commitizen": "^4.3.1",
-    "cspell": "^8.16.0",
-    "eslint": "^9.13.0",
-    "husky": "^9.1.6",
-    "inquirer": "9",
-    "lint-staged": "^15.2.10",
-    "prettier": "^3.2.5",
-    "turbo": "^2.2.3",
-    "typescript": "5.5.4"
-  },
-  "engines": {
-    "node": ">=20.0.0"
-  },
-  "packageManager": "pnpm@8.15.6"
+    "name": "breached-turbo",
+    "version": "0.1.0",
+    "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
+    "license": "MIT",
+    "private": true,
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "commit": "git-cz",
+        "build": "turbo build",
+        "dev": "turbo dev",
+        "lint": "turbo lint",
+        "lint:fix": "turbo lint --continue -- --fix",
+        "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+        "type-check": "turbo type-check",
+        "prepare": "husky"
+    },
+    "config": {
+        "commitizen": {
+            "path": "@commitlint/cz-commitlint"
+        }
+    },
+    "devDependencies": {
+        "@breached-turbo/config-commitlint": "workspace:^",
+        "@breached-turbo/config-eslint": "workspace:^",
+        "@breached-turbo/config-typescript": "workspace:^",
+        "@commitlint/cli": "^19.5.0",
+        "@commitlint/cz-commitlint": "^19.5.0",
+        "commitizen": "^4.3.1",
+        "cspell": "^8.16.0",
+        "eslint": "^9.13.0",
+        "husky": "^9.1.6",
+        "inquirer": "9",
+        "lint-staged": "^15.2.10",
+        "prettier": "^3.2.5",
+        "turbo": "^2.2.3",
+        "typescript": "5.5.4"
+    },
+    "engines": {
+        "node": ">=20.0.0"
+    },
+    "packageManager": "pnpm@8.15.6"
 }
