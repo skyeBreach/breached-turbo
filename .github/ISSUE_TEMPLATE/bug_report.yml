@@ -4,8 +4,8 @@ title: "bug: "
 labels:
   - bug
 body:
-	- type: markdown
-	attributes:
+  - type: markdown
+    attributes:
 		value: |
 			Please make sure to search through the open/closed issues before submitting this issue,
 			as someone may have already made a similar issue previously!
