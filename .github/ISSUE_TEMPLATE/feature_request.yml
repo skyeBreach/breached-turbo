@@ -6,16 +6,17 @@ title: "feat: "
 labels:
   - feature
 body:
-    - type: markdown
-        attributes:
-			value: |
-				Please make sure to search through the open/closed issues before submitting this issue,
-				as someone may have already made a similar issue previously!
+  - type: markdown
+      attributes:
+    value: |
+      Please make sure to search through the open/closed issues before submitting this issue,
+      as someone may have already made a similar issue previously!
 
-				As we are are all volunteers on this repo, please make sure to take the time to correctly fill this
-				issue form out so we can best deal with your issue.
+      As we are are all volunteers on this repo, please make sure to take the time to correctly fill this
+      issue form out so we can best deal with your issue.
 
-				Thank you for filing in an issue, we appreciate that you have taken the time to do this. ❤️
+      Thank you for filing in an issue, we appreciate that you have taken the time to do this. ❤️
+      
 	- type: "input"
 		id: "name"
 		attributes:
