@@ -15,7 +15,6 @@ body:
       issue form out so we can best deal with your issue.
 
       Thank you for filing in an issue, we appreciate that you have taken the time to do this. ❤️
-
 	- type: "textarea"
 		id: "description"
 		attributes:
@@ -25,7 +24,6 @@ body:
 				long, and can only be a sentence or two.
 		validations:
 			required: true
-
 	- type: "textarea"
 		id: "reasoning"
 		attributes:
@@ -37,7 +35,6 @@ body:
 				it) here.
 		validations:
 			required: true
-
 	- type: "textarea"
 		id: "solution"
 		attributes:
@@ -47,7 +44,6 @@ body:
 				This is done to help us understand the design for your solution.
 		validations:
 			required: true
-
 	- type: "textarea"
 		id: "comments"
 		attributes:
@@ -56,7 +52,6 @@ body:
 				Provide any additional information you think the team should know about this issue.
 		validations:
 			required: true
-
 	- type: checkboxes
 		id: "participation"
 		attributes:
@@ -64,7 +59,6 @@ body:
 			options:
 				- label: I am willing to submit a pull request for this change.
 					required: false
-
 	- type: markdown
 		attributes:
 			value: Please **do not** open a pull request until this issue has been accepted by the team.
