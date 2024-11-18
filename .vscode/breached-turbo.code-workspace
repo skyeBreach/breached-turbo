@@ -385,5 +385,8 @@
         "tailwindCSS.experimental.classRegex": [
             ["([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]"],
         ],
+        "yaml.schemas": {
+            "https://json.schemastore.org/github-issue-config.json": "file:///d%3A/Personal%20Projects/breached-turbo/.github/ISSUE_TEMPLATE/config.yml",
+        },
     },
 }
