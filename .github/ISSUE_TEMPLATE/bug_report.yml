@@ -68,4 +68,3 @@ body:
               Provide any additional information you think the team should know about this issue.
       validations:
           required: true
-
