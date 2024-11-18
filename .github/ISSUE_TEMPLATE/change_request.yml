@@ -1,8 +1,9 @@
-name: Enhancement Request
-description: Request an enhancement to this repository
-title: "Feature Request: "
+name: Change/Enhancement Request
+description: Request a change or an enhancement to this repository
+title: "change: "
 labels:
   - enhancement
+  - change
 body:
   	- type: markdown
         attributes:
