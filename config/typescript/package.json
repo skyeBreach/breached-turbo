@@ -6,6 +6,7 @@
     "private": true,
     "files": [
         "base.json",
-        "build.json"
+        "build.json",
+        "typedoc.json"
     ]
 }
