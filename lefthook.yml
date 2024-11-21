@@ -1,3 +1,16 @@
+pre-commit:
+    parallel: true
+    commands:
+        type-check:
+            glob: "*.{ts,tsx}"
+            run: pnpm type-check
+        eslint:
+            glob: "*.{js,ts,jsx,tsx}"
+            run: pnpm lint:eslint:fix {staged_files}
+        spelling:
+            glob: "*.{js,ts,jsx,tsx,md}"
+            run: pnpm cspell {staged_files}
+
 # Use this to validate commit messages
 commit-msg:
     parallel: true
