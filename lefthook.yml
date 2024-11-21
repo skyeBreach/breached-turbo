@@ -1,0 +1,32 @@
+# Runs before the developer is asked for a commit message, no arguments are passed in
+# Can be used to run tests to see if a commit should be allowed based (i.e. linting, type checking, etc)
+pre-commit:
+    parallel: true
+    commands:
+        type-check:
+            glob: "*.{ts,tsx}"
+            run: pnpm type-check
+        eslint:
+            glob: "*.{js,ts,jsx,tsx}"
+            run: pnpm lint:eslint:fix {staged_files}
+        spelling:
+            glob: "*.{js,ts,jsx,tsx,md}"
+            run: pnpm cspell {staged_files}
+
+# Runs after the user enters the commit message, and is only passed the name of the file containing the commit message
+# Can be used to validate the commit message
+commit-msg:
+    parallel: true
+    scripts:
+        "commitlint.sh":
+            runner: bash
+        "cspell.sh":
+            runner: bash
+
+# Runs during push before any objects have been transferred, it is passed the name and location of the remote
+# Can be used to run tests against the code like 'pre-commit' but is run less often, so is less cumbersome
+pre-push:
+    parallel: true
+    commands:
+        packages-audit:
+            run: pnpm audit

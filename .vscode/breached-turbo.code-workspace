@@ -24,6 +24,10 @@
             "name": "Scripts",
             "path": "../scripts",
         },
+        {
+            "name": "Git",
+            "path": "../.git",
+        },
     ],
 
     "settings": {
