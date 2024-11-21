@@ -19,3 +19,9 @@ commit-msg:
             runner: bash
         "cspell.sh":
             runner: bash
+
+pre-push:
+    parallel: true
+    commands:
+        packages-audit:
+            run: pnpm audit
