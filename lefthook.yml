@@ -1,19 +1,6 @@
-# Use this to build commit messages
-prepare-commit-msg:
-    no_tty: true
-    scripts:
-        "commitizen.sh":
-            runner: bash
-
-    #]commands:
-    #    commitzen:
-    #        interactive: true
-    #        run: pnpm git-cz  --hook --amend
-    #        env:
-    #            LEFTHOOK_VERBOSE: 1
-
 # Use this to validate commit messages
 commit-msg:
+    parallel: true
     scripts:
         "commitlint.sh":
             runner: bash
