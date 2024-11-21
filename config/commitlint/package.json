@@ -36,7 +36,6 @@
         "@breached-turbo/config-typescript": "workspace:^",
         "@commitlint/cli": "^19.5.0",
         "@commitlint/types": "^19.5.0",
-        "@commitlint/utils": "^8.3.6",
         "@types/lodash": "^4.17.13"
     }
 }
