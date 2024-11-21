@@ -7,11 +7,11 @@
         "companies",
         "softwareTerms",
         "misc",
-        "npm"
+        "npm",
+        "git"
     ],
     "ignorePaths": [
         "cspell.json",
-        ".git",
         "node_modules",
         "**/*.svg",
         ".build",
@@ -42,6 +42,10 @@
         "TSES",
         "Turborepo",
         "typecheck"
+    ],
+    "languageSettings": [
+        // Ignore commit-msg comments
+        { "languageId": "commit-msg", "ignoreRegExpList": ["/^#.*/gm"] }
     ],
     "flagWords": ["hte"]
 }

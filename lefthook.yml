@@ -4,3 +4,5 @@ commit-msg:
     scripts:
         "commitlint.sh":
             runner: bash
+        "cspell.sh":
+            runner: bash
