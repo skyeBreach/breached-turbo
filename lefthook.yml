@@ -1,12 +1,3 @@
-# Use this to build commit messages
-prepare-commit-msg:
-    commands:
-        commitzen:
-            interactive: true
-            run: pnpm git-cz --hook
-            env:
-                LEFTHOOK: 0
-
 # Use this to validate commit messages
 commit-msg:
     scripts:
