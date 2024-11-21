@@ -1,3 +1,5 @@
+# Runs before the developer is asked for a commit message, no arguments are passed in
+# Can be used to run tests to see if a commit should be allowed based (i.e. linting, type checking, etc)
 pre-commit:
     parallel: true
     commands:
@@ -11,7 +13,8 @@ pre-commit:
             glob: "*.{js,ts,jsx,tsx,md}"
             run: pnpm cspell {staged_files}
 
-# Use this to validate commit messages
+# Runs after the user enters the commit message, and is only passed the name of the file containing the commit message
+# Can be used to validate the commit message
 commit-msg:
     parallel: true
     scripts:
@@ -20,6 +23,8 @@ commit-msg:
         "cspell.sh":
             runner: bash
 
+# Runs during push before any objects have been transferred, it is passed the name and location of the remote
+# Can be used to run tests against the code like 'pre-commit' but is run less often, so is less cumbersome
 pre-push:
     parallel: true
     commands:
