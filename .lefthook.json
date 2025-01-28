@@ -1,0 +1,18 @@
+{
+    "pre-commit": {
+        "parallel": true,
+        "commands": {
+            "spellcheck": {
+                "run": "bun cspell {staged_files}"
+            }
+        }
+    },
+    "commit-msg": {
+        "parallel": true,
+        "scripts": {
+            "commitlint.sh": {
+                "runner": "bash"
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+
+{
+    // VSCode File Explorer
+    "files.exclude": {
+        "**/.git": true,
+        "**/node_modules": true,
+    },
+
+    // VSCode Search
+    "search.exclude": {
+        "**/node_modules": true,
+    },
+
+    // Configuration File Schema's
+    "json.schemas": [
+        {
+            "fileMatch": [".lefthook.json", "lefthook.json"],
+            "url": "https://json.schemastore.org/lefthook.json"
+        },
+        {
+            "fileMatch": ["turbo.json"],
+            "url": "https://turbo.build/schema.json"
+        }
+    ],
+
+    // Markdown Linting and Formatting
+    "[markdown]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll.markdownlint": "always"
+        }
+    },
+    "markdownlint.lintWorkspaceGlobs": [
+        "**/*.{md,mkd,mdwn,mdown,markdown,markdn,mdtxt,mdtext,workbook}",
+        "!**/*.code-search",
+        "!**/bower_components",
+        "!**/node_modules",
+        "!**/.git",
+        "!**/vendor",
+    ],
+}
