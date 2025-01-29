@@ -18,16 +18,14 @@
 BreachedTurbo is a monorepo boilerplate tooled using <a href='https://turbo.build/'>Turborepo</a> and
 <a href='https://bun.sh/'>Bun</a>, that prioritizes the developer's time and experience first.
 
-> [!CAUTION] Early and Active Development
-> If you choose to ignore this warning notice, then you do so at your own risk!
-> <details>
+> [!CAUTION]
 >
-> It is currently not recommended to use this boilerplate for any production level projects.
+> It is currently **not** recommended to use this boilerplate for any production level projects.
 >
 > Some of the features referred to within this README and the documentation provided are in an early stage or are not
 > currently present.
 >
-> </details>
+> If you choose to ignore this **warning**, then you do so at your own **risk**!
 
 ## 📝 Table of Contents <!-- omit in toc -->
 
