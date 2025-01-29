@@ -20,12 +20,12 @@ BreachedTurbo is a monorepo boilerplate tooled using <a href='https://turbo.buil
 
 > [!CAUTION]
 >
-> It is currently **not** recommended to use this boilerplate for any production level projects.
+> It is currently **NOT** recommended to use this boilerplate for any production level projects.
 >
 > Some of the features referred to within this README and the documentation provided are in an early stage or are not
 > currently present.
 >
-> If you choose to ignore this **warning**, then you do so at your own **risk**!
+> If you choose to ignore this **WARNING**, then you do so at your own **RISK**!
 
 ## 📝 Table of Contents <!-- omit in toc -->
 
