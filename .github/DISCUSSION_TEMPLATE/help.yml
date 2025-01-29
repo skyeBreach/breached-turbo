@@ -1,0 +1,32 @@
+labels:
+    - help
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thank you for taking the time to start a discussion.
+
+              ### Before You Post
+              Make sure to check if someone has already asked or answered your question in a previous discussion.
+
+    - type: textarea
+      attributes:
+          label: Summary
+          description: What do you need help with?
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: Additional information
+          description: Any code snippets, error messages, or dependency details that may be related?
+          render: js
+      validations:
+          required: false
+
+    - type: input
+      attributes:
+          label: Example
+          description: A link to a minimal reproduction is helpful for collaborative debugging!
+      validations:
+          required: false
