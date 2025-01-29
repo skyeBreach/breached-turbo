@@ -1,0 +1,11 @@
+{
+    "name": "@breached-turbo/config-typescript",
+    "version": "0.1.0",
+    "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
+    "license": "MIT",
+    "private": true,
+    "files": [
+        "base.json",
+        "build.json"
+    ]
+}

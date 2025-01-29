@@ -1,0 +1,52 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+
+    "compilerOptions": {
+        "lib": ["dom", "dom.iterable", "ESNext"],
+        "module": "ESNext",
+        "target": "es5",
+        "moduleResolution": "Bundler",
+        "moduleDetection": "force",
+        "resolveJsonModule": true,
+        "noEmit": true,
+        "incremental": true,
+        "removeComments": true,
+
+        "strict": true,
+        "strictNullChecks": true,
+        "allowUnusedLabels": false,
+        "exactOptionalPropertyTypes": true,
+        "noImplicitOverride": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "forceConsistentCasingInFileNames": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "allowUnreachableCode": false,
+        "noFallthroughCasesInSwitch": true,
+        "preserveConstEnums": true,
+
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "allowJs": true,
+        "checkJs": true,
+        "skipLibCheck": true,
+
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "pretty": true,
+        "preserveWatchOutput": true,
+
+        "baseUrl": "${configDir}",
+        "tsBuildInfoFile": "${configDir}/.build/tsconfig.tsbuildinfo",
+        "paths": {
+            "@/*": ["${configDir}/src/*"]
+        }
+    },
+    "include": ["${configDir}/"],
+    "exclude": ["${configDir}/node_modules", "${configDir}/build"]
+}
