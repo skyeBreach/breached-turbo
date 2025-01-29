@@ -3,7 +3,7 @@
         "parallel": true,
         "commands": {
             "spellcheck": {
-                "run": "bun cspell {staged_files}"
+                "run": "bun cspell {staged_files} --no-must-find-files"
             }
         }
     },
