@@ -11,9 +11,9 @@
 		"config/*",
 		"tooling/*"
 	],
-    "scripts": {
-        "commit": "git-cz"
-    },
+	"scripts": {
+		"commit": "git-cz"
+	},
 	"devDependencies": {
 		"@commitlint/cli": "^19.6.1",
 		"@commitlint/config-conventional": "^19.6.0",
@@ -22,6 +22,10 @@
 		"cspell": "^8.17.3",
 		"cspell-cli": "^8.17.1",
 		"lefthook": "^1.10.10",
+		"markdownlint": "^0.37.4",
+		"markdownlint-cli": "^0.44.0",
+		"pkg-types": "^1.3.1",
+		"prettier": "^3.4.2",
 		"turbo": "^2.3.4",
 		"typescript": "^5.7.3"
 	},
