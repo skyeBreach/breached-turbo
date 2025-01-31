@@ -4,8 +4,8 @@
     "compilerOptions": {
         "lib": ["dom", "dom.iterable", "ESNext"],
         "module": "ESNext",
-        "target": "es5",
-        "moduleResolution": "Bundler",
+        "target": "es2022",
+        "moduleResolution": "bundler",
         "moduleDetection": "force",
         "resolveJsonModule": true,
         "noEmit": true,
@@ -42,11 +42,11 @@
         "preserveWatchOutput": true,
 
         "baseUrl": "${configDir}",
-        "tsBuildInfoFile": "${configDir}/.build/tsconfig.tsbuildinfo",
+        "tsBuildInfoFile": "${configDir}/tsconfig.tsbuildinfo",
         "paths": {
             "@/*": ["${configDir}/src/*"]
         }
     },
     "include": ["${configDir}/"],
-    "exclude": ["${configDir}/node_modules", "${configDir}/build"]
+    "exclude": ["${configDir}/node_modules", "${configDir}/dist"]
 }

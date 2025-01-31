@@ -3,19 +3,23 @@
     "tasks": {
         "build": {
             "dependsOn": ["^build"],
-            "inputs": [],
-            "outputs": ["dist/**"]
+            "inputs": ["$TURBO_DEFAULT$"],
+            "outputs": ["dist/**", "*.tsbuildinfo"]
         },
         "typecheck": {
             "dependsOn": ["^build"],
-            "inputs": [],
+            "inputs": ["$TURBO_DEFAULT$"],
             "outputs": ["*.tsbuildinfo"]
         },
         "dev": {
             "dependsOn": ["^build"],
             "persistent": true,
             "cache": false,
-            "inputs": []
+            "inputs": ["$TURBO_DEFAULT$"]
+        },
+        "lint": {
+            "dependsOn": ["@breached-turbo/config-eslint#build"],
+            "inputs": ["$TURBO_DEFAULT$"]
         }
     }
 }
