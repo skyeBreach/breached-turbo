@@ -1,0 +1,39 @@
+{
+    "name": "@breached-turbo/config-eslint",
+    "version": "0.1.0",
+    "author": "skyeBreach (https://gitlab.com/skyeBreachBusiness)",
+    "license": "MIT",
+    "private": true,
+    "description": "",
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "scripts": {
+        "build":"tsc -p tsconfig.build.json",
+        "dev": "tsc -w -p tsconfig.build.json",
+        "lint": "eslint . --max-warnings 0",
+        "type-check": "tsc"
+    },
+    "dependencies": {
+        "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
+        "@eslint/js": "^9.13.0",
+        "@typescript-eslint/utils": "^8.12.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "eslint-plugin-prettier": "^5.2.1",
+        "eslint-plugin-turbo": "^2.2.3",
+        "globals": "^15.11.0",
+        "typescript-eslint": "^8.12.0"
+    },
+    "devDependencies": {
+        "@breached-turbo/config-typescript": "workspace:*",
+        "@eslint/eslintrc": "^3.2.0",
+        "@types/eslint__js": "^8.42.3",
+        "@types/node": "^22.8.1",
+        "@types/bun": "^1.2.1"
+    }
+}
